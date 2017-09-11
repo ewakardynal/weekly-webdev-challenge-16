@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.1rem;
+  font-family: Verdana;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+h4 {
+  font-size: 1.9rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+#welcome {
+  background: url(../img/bg.jpg) top left 20% no-repeat;
+  height: 100vh;
+  color: #fff;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+}
+#welcome nav {
+  position: fixed;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 36px 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+#welcome hgroup {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+
+.sticky {
+  background-color: #66a900;
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=style.css.map */
