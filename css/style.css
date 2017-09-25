@@ -18,6 +18,7 @@ h1 {
   font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  padding-bottom: 2.2rem;
 }
 
 h2 {
@@ -40,36 +41,89 @@ h6 {
   font-size: 1.1rem;
 }
 
-#welcome {
-  background: url(../img/bg.jpg) top left 20% no-repeat;
+.home {
+  background: url(../img/bg.jpg) top left no-repeat fixed;
   height: 100vh;
+  max-height: 840px;
   color: #fff;
   max-width: 1600px;
   margin: 0 auto;
   overflow-x: hidden;
   position: relative;
 }
-#welcome nav {
+.home nav {
   position: fixed;
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 36px 10%;
+  padding: 72px 10%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.5s;
 }
-#welcome hgroup {
-  width: 80%;
-  margin: 0 auto;
+.home nav img {
   position: absolute;
   left: 10%;
-  top: 30%;
 }
-
-.sticky {
+.home nav span {
+  font-size: 2.5rem;
+}
+.home nav ul {
+  display: none;
+}
+.home nav ul li {
+  display: inline-flex;
+}
+.home nav.sticky {
   background-color: #66a900;
   opacity: 0.9;
+  padding: 20px 10%;
+}
+.home hgroup {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home .scroll-down {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: 1s ease;
+}
+.home .scroll-down:hover {
+  background-color: #66a900;
+}
+.home .scroll-down span {
+  font-size: 2.5rem;
+  text-shadow: 0 -10px 0 #fff;
+  animation: scrollDown 1.6s infinite linear;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-45px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(45px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
